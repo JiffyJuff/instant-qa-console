@@ -262,6 +262,13 @@ int test_card(struct Card **cards, int i, int size) {
         return QUIT;
     }
 
+    // If response is "\s", skip and remove from deck
+    if (strcmp(response, "\\s") == 0) {
+        printf("\n\n");
+        free(response);
+        return TRUE;
+    }
+
     // Creates a blank string of minimum length 12 for alignment
     int length = max(12, real_len(card.question)) + 1;
     char *space = malloc(sizeof(char) * length);
