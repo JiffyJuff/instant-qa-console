@@ -33,7 +33,7 @@ Newton's Second Law,F=ma
 ...
 ```
 
-Special and accented characters are accepted. Commas are not accepted in the question segment and will result in an unreported parsing error, but allowed in the answer segment. Answers are case-sensitive.
+Special and accented characters are accepted. Commas are not accepted in the question segment and will result in an unreported parsing error, but allowed in the answer segment. Answers are case- and whitespace-sensitive.
 
 ### Instructions of use
 
