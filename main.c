@@ -309,6 +309,7 @@ int test_card(struct Card **cards, int i, int size) {
             printf("%s", solution);
             to_be_filled -= real_len(solution) - strlen(ANSI_COLOR_YELLOW) * 2 -
                             strlen(ANSI_COLOR_RESET) * 2;
+            free(head);
         }
         result = FALSE;
     }
@@ -383,6 +384,9 @@ void loop() {
         "\n\n",
         cycles, cycles == 1 ? "" : "s", cycles * length,
         (int)roundf(((float)first_round_incorrect) / length * 100));
+    
+    free(deck);
+    
     loop();
 }
 
