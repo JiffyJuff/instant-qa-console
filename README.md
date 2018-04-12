@@ -1,11 +1,11 @@
 # instant-qa-console
 A simple question-and-answer C application for the command-line interface.
 
-###Format:
+### Format:
 
 `./a.out [path] [start] [end] [length]`
 
-###Arguments:
+### Arguments:
 - `[path]`: the file path to the target .csv
 - `[start]`: which line to start reading from (inclusive).
 - `[end]`: which line to stop reading (inclusive).
@@ -15,7 +15,7 @@ A simple question-and-answer C application for the command-line interface.
   - Passing "long" as the `[length]` argument doubles both limits.
   - Passing "superlong" as the `[length]` argument quadruples both limits.
 
-###Formatting input
+### Formatting input
 
 The target csv should be formatted as such:
 ```
@@ -35,7 +35,7 @@ Newton's Second Law,F=ma
 
 Special and accented characters are accepted. Commas are not accepted in the question segment and will result in an unreported parsing error, but allowed in the answer segment. Answers are case-sensitive.
 
-###Instructions of use
+### Instructions of use
 
 The lines selected in the initial arguments are loaded into a 'deck' of question/answer pairs. They are dealt randomly. The user is to enter what they believe to be the correct answer and submit by pressing the return key. The suggested answer is then displayed; a correct response is indicated by green, an incorrect response is indicated by red, and a partially correct response is indicated by yellow.
 
