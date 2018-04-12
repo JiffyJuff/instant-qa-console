@@ -39,10 +39,10 @@ Special and accented characters are accepted. Commas are not accepted in the que
 
 The lines selected in the initial arguments are loaded into a 'deck' of question/answer pairs. They are dealt randomly. The user is to enter what they believe to be the correct answer and submit by pressing the return key. The suggested answer is then displayed; a correct response is indicated by green, an incorrect response is indicated by red, and a partially correct response is indicated by yellow.
 
-The progress through the current deck is recorded to the right of the screen as [?/?], incrementing with each response whether correct or not. When the deck is exhausted, correctly answered questions are removed from the deck and the remaining 'cards' are reshuffled and dealt again. This repeats until all questions have been answered correctly.
+The progress through the current deck is recorded to the right of the screen as `[?/?]`, incrementing with each response whether correct or not. When the deck is exhausted, correctly answered questions are removed from the deck and the remaining 'cards' are reshuffled and dealt again. This repeats until all questions have been answered correctly.
 
 When the deck is empty (all questions correctly answered), the user is informed of the number of questions answered correctly in the first round, as well as the number of questions completed thus far. The deck is then reloaded to its initial state and the cycle repeats.
 
-Submit "\s" as an  answer to skip that question. It is removed from the deck.
+Submit `\s` as an  answer to skip that question. It is removed from the deck.
 
-Submit "\q" as an answer to any question to quit immediately.
+Submit `\q` as an answer to any question to quit immediately.
