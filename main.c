@@ -286,7 +286,7 @@ int test_card(struct Card **cards, int i, int size) {
     }
 
     // If response is "q", immediately quit
-    if (strcmp(response, "q") == 0) {
+    if (strcmp(response, "\\q") == 0) {
         return QUIT;
     }
 
